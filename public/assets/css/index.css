@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,400,700");
+.btn {
+  border: none;
+  border-radius: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  letter-spacing: 0px;
+  padding: 1rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  will-change: background; }
+
+.btn-primary {
+  background: #5d9ff5; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: #3888EF; }
+  .btn-primary.btn-outline {
+    background: #fff;
+    border: .1rem solid #5d9ff5;
+    color: #5d9ff5;
+    padding: .9rem; }
+    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus {
+      background: #3888EF;
+      border-color: #3888EF;
+      color: #fff; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  color: #242424;
+  font-family: 'Titillium Web', sans-serif; }
+  body a {
+    color: #5d9ff5; }
+    body a:hover {
+      text-decoration: none;
+      color: #3888EF; }
+  body .top-col {
+    padding: 0;
+    color: #fff; }
+    body .top-col .top-bar {
+      padding: 15px 15px;
+      font-size: 2em;
+      background: #5d9ff5; }
+  body .container-fluid {
+    height: calc(100% - 78px); }
+  body .login-box {
+    background: #fff;
+    padding-top: 35px;
+    border-radius: .25rem;
+    border: 1px solid rgba(0, 0, 0, 0.15); }
+    body .login-box h1 {
+      margin-top: 25px;
+      display: none; }
+    body .login-box .img-fluid {
+      width: 128px;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: -64px;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+      border-left: 1px solid rgba(0, 0, 0, 0.15); }
+    body .login-box #user-img {
+      display: none; }
+    body .login-box #password-group {
+      display: none; }
+    body .login-box .links {
+      text-align: center; }
+      body .login-box .links a {
+        display: inline-block;
+        width: 100%; }
+  body form.pretty-form p {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 200; }
+  body form.pretty-form label {
+    color: #242424;
+    font-size: 1.2rem;
+    position: absolute;
+    -webkit-transition: cubic-bezier(0, 0.18, 0.65, 1) 0.1s;
+    transition: cubic-bezier(0, 0.18, 0.65, 1) 0.1s;
+    -webkit-transform: translate3d(-1px, -32px, 0);
+    transform: translate3d(-1px, -32px, 0);
+    will-change: transform; }
+  body form.pretty-form input, body form.pretty-form input:focus {
+    margin-top: 28px;
+    border: none;
+    border-radius: 0;
+    background: none;
+    text-align: center; }
+    body form.pretty-form input:focus ~ label, body form.pretty-form input:focus:focus ~ label {
+      font-size: 1rem;
+      -webkit-transform: translate3d(-1px, -64px, 0);
+      transform: translate3d(-1px, -64px, 0); }
+    body form.pretty-form input:valid ~ label, body form.pretty-form input:focus:valid ~ label {
+      font-size: 1rem;
+      -webkit-transform: translate3d(-2px, -64px, 0);
+      transform: translate3d(-2px, -64px, 0); }
+  body form.pretty-form button {
+    width: 100%; }
+
+.spinner {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: none; }
+
+.cube1, .cube2 {
+  background-color: #5d9ff5;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out; }
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+.register-box {
+  display: none;
+  padding-right: 35px; }
+  .register-box h1 {
+    margin-top: 2rem; }
+  .register-box .dimmed {
+    color: #aaaaaa; }
+  .register-box form {
+    margin-top: 4rem; }
+    .register-box form .row {
+      margin-top: 2rem; }
+      .register-box form .row.buttons-row {
+        margin-top: 0; }
+        .register-box form .row.buttons-row button {
+          width: 100%; }
+      .register-box form .row input, .register-box form .row select {
+        line-height: 18px;
+        font-size: 18px;
+        padding: 1rem;
+        height: auto; }
+        .register-box form .row input:invalid, .register-box form .row select:invalid {
+          color: #878f96; }
+        .register-box form .row input#registerPassword, .register-box form .row select#registerPassword {
+          border-right: 5px solid #f25368; }
+          .register-box form .row input#registerPassword.valid, .register-box form .row select#registerPassword.valid {
+            border-right: 5px solid #53d276; }
+  .register-box .date-control {
+    width: 20%;
+    display: inline-block;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+    text-align: center; }
+    .register-box .date-control:not(:first-of-type) {
+      border-radius: 0; }
+  .register-box .date-control-addon {
+    padding: 1.25rem .5rem;
+    position: relative;
+    top: -1px;
+    font-size: 18px;
+    line-height: 18px;
+    display: inline-block;
+    width: 40%;
+    border-radius: 0;
+    border: 1px solid #5d9ff5;
+    border-bottom-width: 2px;
+    background: #5d9ff5;
+    color: #fff;
+    font-weight: 500;
+    text-align: center; }
+
+.text-green {
+  color: #53d276; }
+
+.text-red {
+  color: #f25368; }
+
+@-webkit-keyframes sk-cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg); }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=index.css.map */
